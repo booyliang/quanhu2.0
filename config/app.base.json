@@ -1,0 +1,11 @@
+{
+	"APP_PROTOCOL": "quanhu",
+	"APP_HOST": "uri.main/openwith?routeUrl=",
+	"DOWNLOAD_APP_URL": "//static.yryz.com/quanhu/download/index.html",
+	"SENTRY_CONFIG": {
+		"organization": "yryz-n7",
+		"project": "quanhu",
+		"apiKey": "104d4ca36caa4849bbd2c19cfdd39d66d4b07816df334e74a35a0529db02ec8f",
+		"dsn": "https://f382acd166654cdc8de93b97f0ccedf6@sentry.io/272229"
+	}
+}

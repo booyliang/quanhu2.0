@@ -1,0 +1,208 @@
+:root {
+
+	/* 默认字号 */
+	--default-font-size: .3rem;
+
+	/* 默认行高 */
+	--default-line-height: 1.5;
+
+	/* 错误主题颜色 */
+	--error-color: #f93434;
+
+	/* 主要文字颜色 */
+	--text-primary-color: #000;
+
+	/* 次要文字颜色 */
+	--text-secondary-color: #333;
+
+	/* 辅助文字颜色 */
+	--text-assist-color: #666;
+
+	/* 提示文字颜色 */
+	--text-tips-color: #999;
+
+	/* 栏目文字颜色 */
+	--text-column-color: #868686;
+
+	/* 常用字体图标颜色 */
+	--font-common-color: #bfbfbf;
+
+	/* 一般的背景颜色 */
+	--bg-color: #f8f8f8;
+
+	/* 边框颜色 */
+	--border-color: #e7e7e7;
+
+	/* 禁用颜色 */
+	--disabled-color: #d7d7d7;
+
+	/* 一般布局的留白 */
+	--layout-space: 0.2rem;
+
+	/* 半透明背景色 */
+	--bg-alpha-color: color(black alpha(0.5));
+
+	/* 列表缩略图宽度 */
+	--flow-list-thumb-width: 2rem;
+
+	/* 列表缩略图右边距 */
+	--flow-list-thumb-margin-right: 0.4rem;
+
+	/* 列表缩略图总占位 */
+	--flow-list-thumb-holder-width: calc(var(--flow-list-thumb-width) + var(--flow-list-thumb-margin-right));
+
+	/* 一般布局 */
+	--layout: {
+		padding: 0 var(--layout-space);
+	}
+
+	/* 抵消上级留白 */
+	--offset-layout: {
+		margin: 0 -var(--layout-space);
+	}
+
+	/* 一般的下外边距 */
+	--margin-bottom {
+		margin-bottom: 0.2rem;
+	}
+
+	/* 圆形 */
+	--circle {
+		border-radius: 50%;
+	}
+
+	/* 最大圆角 */
+	--round {
+		border-radius: 999px;
+	}
+
+	/* 隐藏 */
+	--hidden: {
+		visibility: hidden;
+		opacity: 0;
+	};
+
+	/* 显示 */
+	--visible: {
+		visibility: visible;
+		opacity: 1;
+	};
+
+	/* 区块 */
+	--box {
+		@apply --margin-bottom;
+		background: white;
+	}
+
+	/* 边框 */
+	--border {
+		border: 1px solid var(--border-color);
+
+	}
+
+	/* 上边框 */
+	--border-top {
+		border-top: 1px solid var(--border-color);
+	}
+
+	/* 下边框 */
+	--border-bottom {
+		border-bottom: 1px solid var(--border-color);
+	}
+
+	/* 清除浮动 */
+	--clearfix {
+		&:--before-after {
+			content: "";
+			display: table;
+		}
+		&:after {
+			clear: both;
+		}
+	}
+
+	/* 半透明背景 */
+	--bg-alpha {
+		color: white;
+		background: var(--bg-alpha-color);
+	}
+
+	/* 全屏 */
+	--full {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+
+	/* 文字截取（单行） */
+	--text-cut {
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+
+	/* 文字截取（多行） */
+	--text-cut-multi-line {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+
+	/* 隐藏的 input */
+	--hidden-input {
+		position: absolute;
+		left: -9999px;
+		opacity: 0;
+	}
+
+	/* 常用的flex */
+	--display-flex {
+		display:flex;
+		align-items: center;
+	}
+
+	/* 无点击效果 */
+	--no-tap-highlight {
+		-webkit-tap-highlight-color: transparent;
+	};
+
+	/* 平滑滚动 */
+	--scrolling {
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+	};
+
+	/* 主题色 */
+	--theme-color: #0d4372;
+	--active-color: #0d4372;
+	--assist-color: #0d4372;
+
+	/* 辅色 */
+	--secondary-color: #1f1f1f;
+
+	/* 提示色 */
+	--warning-color: #fb4545;
+
+	/* 文字辅助色浅灰 */
+	--text-assist-light: #aaaaaa;
+
+	/* 边框 */
+	--border {
+		border: 1px solid var(--border-color);
+	}
+
+	/* 上边框 */
+	--border-top {
+		border-top: 1px solid var(--border-color);
+	}
+
+	/* 下边框 */
+	--border-bottom {
+		border-bottom: 1px solid var(--border-color);
+	}
+}
+
+@custom-selector :--before-after ::before, ::after;
+@custom-selector :--disabled [disabled], .disabled

@@ -1,0 +1,9 @@
+
+{
+	"SENTRY_CONFIG": {
+		"organization": "yryz",
+		"project": "quanhu",
+		"apiKey": "b73cdd2cd1bf4876a1f50f8e7dfad70351f54b8bfbfd4ba5a27b298fcf7d9ff5",
+		"dsn": "https://334ab10881744ca09572be3520bc7b32@sentry.io/272281"
+	}
+}

@@ -1,0 +1,21 @@
+@import "#/css/var.css";
+@import "reset.css";
+@import "iconfont.css";
+body {
+	font-size: var(--default-font-size);
+	line-height: var(--default-line-height);
+	color: var(--text-primary-color);
+	background: var(--bg-color);
+	word-break: break-all;
+	font-family: "pingfang sc", system-ui, Helvetica Neue,Helvetica,Roboto,Segoe UI,Arial,sans-serif;
+}
+
+img {
+	vertical-align: top;
+	object-fit: cover;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+}
+.layout {
+	@apply --layout;
+}

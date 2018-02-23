@@ -1,0 +1,26 @@
+@import "../../common/css/var.css";
+:root {
+    /* 主题颜色 */
+    --theme-color: #0D4372;
+    /* 激活状态颜色 */
+    --active-color: color(var(--theme-color) shade(10%));
+    /* 错误状态颜色 */
+    --error-color: #0D4372;
+    --goods-toolbar-height: 0.96rem;
+    --list-flex {
+        display: flex;
+        flex: 1;
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    --content-flex {
+        flex: 1 1 100%;
+        display: flex;
+        flex-direction: column;
+    }
+	--text-cut-multi-line {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+}
